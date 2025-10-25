@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Analytics</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Customer Analytics Dashboard</h1>
+  </header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/predict">Churn Prediction</a>
+    <a href="/segmentation">Segmentation</a>
+    <a href="/dashboard">Power BI</a>
+    <a href="/analytics">Analytics</a>
+  </nav>
+
+  <section class="plot-grid">
+    <iframe src="{{ url_for('static', filename='plots/churn_distribution.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/churn_by_gender.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/churn_by_subscription.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/churn_by_contract.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/tenure_vs_churn.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/support_vs_churn.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/payment_delay_vs_churn.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/total_spend_by_subscription.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/avg_spend_by_churn.html') }}"></iframe>
+    <iframe src="{{ url_for('static', filename='plots/age_distribution_by_churn.html') }}"></iframe>
+  </section>
+
+  <footer>© 2025 Customer Analytics Portal</footer>
+</body>
+</html>

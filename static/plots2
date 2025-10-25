@@ -1,0 +1,24 @@
+import plotly.express as px
+import plotly.figure_factory as ff
+import os
+import pandas as pd
+# --- Load your dataset ---
+df = pd.read_csv("customer_churn_dataset.csv")  # change path if needed
+# Ensure folder exists
+os.makedirs("static/plots", exist_ok=True)
+
+# PCA Scatter Plot
+fig_pca = px.scatter(df, x='PCA1', y='PCA2', color='Cluster',
+                     title='Customer Segmentation PCA Clusters',
+                     color_continuous_scale=px.colors.qualitative.Set1,
+                     width=800, height=600)
+fig_pca.write_html("static/plots/cluster_pca.html", include_plotlyjs='cdn')
+
+# Cluster Heatmap
+cluster_summary = df.groupby('Cluster')[['Age','Tenure','Usage Frequency',
+                                                   'Support Calls','Payment Delay','Total Spend']].mean().values
+fig_heatmap = ff.create_annotated_heatmap(cluster_summary,
+                                          x=['Age','Tenure','Usage Frequency','Support Calls','Payment Delay','Total Spend'],
+                                          y=[f'Cluster {i}' for i in range(cluster_summary.shape[0])],
+                                          colorscale='Viridis')
+fig_heatmap.write_html("static/plots/heatmap.html", include_plotlyjs='cdn')

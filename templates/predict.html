@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Churn Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>Customer Churn Prediction</header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/predict">Churn Prediction</a>
+    <a href="/segmentation">Segmentation</a>
+    <a href="/dashboard">Power BI Dashboard</a>
+    <a href="/analytics">Analytics</a>
+  </nav>
+
+  <form id="churnForm">
+    <h3>Enter Customer Details</h3>
+    <input name="CustomerID" placeholder="Customer ID" required>
+    <input name="Age" placeholder="Age" required>
+    <input name="Tenure" placeholder="Tenure" required>
+    <input name="Usage Frequency" placeholder="Usage Frequency" required>
+    <input name="Support Calls" placeholder="Support Calls" required>
+    <input name="Payment Delay" placeholder="Payment Delay" required>
+    <input name="Total Spend" placeholder="Total Spend" required>
+    <input name="Last Interaction" placeholder="Last Interaction (Days)" required>
+
+    <select name="Gender" required>
+      <option disabled selected>Gender</option>
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+    </select>
+
+    <select name="Subscription Type" required>
+      <option disabled selected>Subscription Type</option>
+      <option value="Basic">Basic</option>
+      <option value="Standard">Standard</option>
+      <option value="Premium">Premium</option>
+    </select>
+
+    <select name="Contract Length" required>
+      <option disabled selected>Contract Length</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Quarterly">Quarterly</option>
+      <option value="Annual">Annual</option>
+    </select>
+
+    <button type="submit">Predict</button>
+  </form>
+
+  <div id="result"></div>
+
+  <footer>© 2025 Customer Retention Analytics</footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

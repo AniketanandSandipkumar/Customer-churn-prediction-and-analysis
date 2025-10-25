@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Segmentation</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>Customer Segmentation Analysis</header>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/predict">Churn Prediction</a>
+    <a href="/segmentation">Segmentation</a>
+    <a href="/dashboard">Power BI Dashboard</a>
+    <a href="/analytics">Analytics</a>
+  </nav>
+
+  <iframe src="{{ url_for('static', filename='plots/cluster_heatmap.png') }}"></iframe>
+
+  <iframe src="{{ url_for('static', filename='plots/cluster_pca.html') }}"></iframe>
+
+  <footer>© 2025 Customer Retention Analytics</footer>
+</body>
+</html>

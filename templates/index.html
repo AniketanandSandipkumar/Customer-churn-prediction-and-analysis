@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Churn Analytics</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Customer Churn & Segmentation Analytics</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/predict">Churn Prediction</a>
+      <a href="/segmentation">Segmentation</a>
+      <a href="/dashboard">Power BI Dashboard</a>
+      <a href="/analytics">Analytics</a>
+    </nav>
+  </header>
+
+  <section class="hero" height="500px">
+    <h2>Understand. Predict. Retain.</h2>
+    <p>Use AI-powered insights to reduce churn, boost retention, and understand customer behavior.</p>
+    <a href="/predict" class="cta">Try Prediction</a>
+  </section>
+
+  <main>
+    <section class="index-plot">
+      <h3>Churn Rate Distribution</h3>
+      <iframe src="{{ url_for('static', filename='plots/churn_distribution.html') }}"></iframe>
+    </section>
+  </main>
+  
+  <footer>© 2025 Customer Retention Analytics</footer>
+</body>
+</html>
