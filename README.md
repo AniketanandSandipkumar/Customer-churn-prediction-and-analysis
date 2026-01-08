@@ -1,1 +1,150 @@
-# Customer-churn-prediction-and-analysis
+
+### 🔹 Models
+- Trained churn classification model (scikit-learn)
+- Saved model and scaler as `.pkl` files
+- Loaded directly into Flask for real-time inference
+
+---
+
+## 📈 Analytics & Visualizations
+
+### 🔹 Plotly Visualizations (10 Key Insights)
+
+**Churn Analysis**
+- Churn Rate Distribution
+- Churn by Gender
+- Churn by Subscription Type
+- Churn by Contract Length
+
+**Customer Behavior**
+- Tenure vs Churn
+- Support Calls vs Churn
+- Payment Delay vs Churn
+
+**Revenue Insights**
+- Total Spend by Subscription Type
+- Average Spend by Churn Status
+- Age Distribution by Churn
+
+All plots are dynamically generated and displayed within the web application.
+
+---
+
+## 📊 Power BI Dashboards
+
+Three professional dashboards were created and integrated:
+
+1️⃣ **Churn Overview Dashboard**
+- Churn rate by contract length
+- Tenure-based churn trends
+- Overall churn distribution
+
+2️⃣ **Revenue Impact Dashboard**
+- Revenue loss due to churn
+- Spend comparison (churned vs retained)
+- Support call patterns
+
+3️⃣ **Customer Engagement Dashboard**
+- Usage frequency analysis
+- Payment delay impact
+- Contract and subscription performance
+
+These dashboards provide **executive-level insights** alongside ML predictions.
+
+---
+
+## 🌐 Web Application (Flask)
+
+### 🔹 Pages Included
+- **Home** – Project overview
+- **Churn Prediction** – Interactive prediction form
+- **Customer Segmentation** – Cluster-based insights
+- **Analytics** – Plotly visualizations
+- **Dashboard** – Embedded Power BI reports
+
+### 🔹 Tech Stack
+- Backend: **Flask**
+- Frontend: **HTML, CSS, JavaScript**
+- Styling: Modern, warm color palette, responsive for **1366×768** screens
+- Interactive UX with dynamic form handling
+
+---
+
+## 📂 Project Structure
+
+customer_analytics_app/  
+│  
+├── main.py  
+├── requirements.txt  
+├── Procfile  
+├── app.yaml 
+├── README.md  
+│  
+├── models/  
+│ ├── churn_model.pkl  
+│ └── scaler.pkl  
+│  
+├── templates/  
+│ ├── index.html  
+│ ├── predict.html  
+│ ├── segmentation.html  
+│ ├── analytics.html  
+│ └── dashboard.html  
+│  
+├── static/  
+│ ├── style.css  
+│ ├── script.js  
+│ └── plots/  
+│  
+├── segmentation_utils.py  
+└── customer_churn_dataset.csv  
+
+---
+
+## ☁️ Deployment
+
+This project is **cloud-ready** and has been deployed/tested on:
+
+### 🔹 AWS EC2
+- Ubuntu instance
+- SSH access using `.pem` key
+- Flask app exposed on port **8080**
+- Security Group configured for HTTP access
+
+### 🔹 Render
+- Gunicorn-based deployment
+- `Procfile` configured
+- Automatic builds from GitHub
+
+### 🔹 Google Cloud (App Engine)
+- `app.yaml` included
+- Compatible with GCP Python runtime
+
+---
+
+## 🛠 Installation & Run Locally
+
+1.git clone https://github.com/your-username/Customer-churn-prediction-and-analysis.git<br>
+2.cd customer_analytics_app<br>
+3.python -m venv venv<br>
+4.source venv/bin/activate   # Windows: venv\Scripts\activate  
+5.pip install -r requirements.txt<br>
+6.python main.py<br>
+
+🎯 Key Outcomes:  
+-Built a production-style ML system, not just a notebook  
+-Combined ML + BI + Web Development  
+-Designed for business decision-making  
+-Deployed on real cloud infrastructure  
+-Resume-ready & interview-ready project  
+
+🔮 Future Enhancements:  
+-Model monitoring & drift detection  
+-Role-based access control  
+-Real-time database integration  
+-Automated retraining pipeline  
+-A/B testing for churn reduction strategies  
+
+👤 Author:  
+Aniketanand Sandipkumar  
+🔗App Link:https://customer-churn-prediction-and-analysis.onrender.com
