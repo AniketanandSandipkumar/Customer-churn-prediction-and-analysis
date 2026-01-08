@@ -1,3 +1,39 @@
+# 📊 Customer Churn Prediction & Analysis Platform
+
+An end-to-end **Customer Churn Prediction and Analytics Platform** that combines **Machine Learning, Data Visualization, Business Intelligence dashboards, and Web Deployment** to help organizations identify churn risks, understand customer behavior, and make data-driven retention decisions.
+
+This project is designed as a **real-world, production-style analytics application**, not just a model notebook.
+
+---
+
+## 🚀 Project Overview
+
+Customer churn is one of the biggest challenges for subscription-based businesses. This project provides:
+
+- 🔮 **Churn Prediction using Machine Learning**
+- 👥 **Customer Segmentation Analysis**
+- 📈 **Interactive Data Visualizations (Plotly)**
+- 📊 **Embedded Power BI Dashboards**
+- 🌐 **Modern Web Interface (Flask + HTML/CSS/JS)**
+- ☁️ **Cloud Deployment Ready (AWS / Render / GCP)**
+
+The application allows business users to:
+- Predict whether a customer is likely to churn
+- Analyze churn trends across demographics and subscriptions
+- Understand revenue loss due to churn
+- Segment customers for targeted retention strategies
+
+---
+
+## 🧠 Machine Learning Pipeline
+
+### 🔹 Data Processing
+- Handled numerical and categorical features
+- Applied **one-hot encoding** for categorical variables
+- Scaled numerical features using **MinMaxScaler**
+- Balanced classes using **SMOTE (imbalanced-learn)**
+
+### 🔹 Features Used
 
 ### 🔹 Models
 - Trained churn classification model (scikit-learn)
@@ -7,9 +43,19 @@
 ---
 
 ## 📈 Analytics & Visualizations
+-CustomerID  
+-Age  
+-Tenure  
+-Usage Frequency  
+-Support Calls  
+-Payment Delay  
+-Total Spend  
+-Last Interaction  
+-Gender (Male/Female)  
+-Subscription Type (Basic / Standard / Premium)  
+-Contract Length (Monthly / Quarterly / Annual)  <br>
 
-### 🔹 Plotly Visualizations (10 Key Insights)
-
+### 🔹 Plotly Visualizations (10 Key Insights)  
 **Churn Analysis**
 - Churn Rate Distribution
 - Churn by Gender
