@@ -17,11 +17,11 @@ Customer churn is one of the biggest challenges for subscription-based businesse
 - 🌐 **Modern Web Interface (Flask + HTML/CSS/JS)**
 - ☁️ **Cloud Deployment Ready (AWS / Render / GCP)**
 
-The application allows business users to:
-- Predict whether a customer is likely to churn
-- Analyze churn trends across demographics and subscriptions
-- Understand revenue loss due to churn
-- Segment customers for targeted retention strategies
+The application allows business users to:  
+- Predict whether a customer is likely to churn  
+- Analyze churn trends across demographics and subscriptions  
+- Understand revenue loss due to churn  
+- Segment customers for targeted retention strategies  
 
 ---
 
@@ -33,16 +33,7 @@ The application allows business users to:
 - Scaled numerical features using **MinMaxScaler**
 - Balanced classes using **SMOTE (imbalanced-learn)**
 
-### 🔹 Features Used
-
-### 🔹 Models
-- Trained churn classification model (scikit-learn)
-- Saved model and scaler as `.pkl` files
-- Loaded directly into Flask for real-time inference
-
----
-
-## 📈 Analytics & Visualizations
+### 🔹 Features Used  
 -CustomerID  
 -Age  
 -Tenure  
@@ -54,6 +45,15 @@ The application allows business users to:
 -Gender (Male/Female)  
 -Subscription Type (Basic / Standard / Premium)  
 -Contract Length (Monthly / Quarterly / Annual)  <br>
+
+### 🔹 Models
+- Trained churn classification model (scikit-learn)
+- Saved model and scaler as `.pkl` files
+- Loaded directly into Flask for real-time inference
+
+---
+
+## 📈 Analytics & Visualizations
 
 ### 🔹 Plotly Visualizations (10 Key Insights)  
 **Churn Analysis**
